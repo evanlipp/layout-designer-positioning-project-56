@@ -1,0 +1,14 @@
+@mixin reset {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin up-bold {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+@mixin img-position($position: center, $size: cover) {
+  background-position: $position;
+  background-size: $size;
+}

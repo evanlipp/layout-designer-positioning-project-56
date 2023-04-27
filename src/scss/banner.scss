@@ -1,0 +1,84 @@
+.bg-banner {
+  background-image: url('../images/banner.png');
+
+  @include img-position;
+}
+
+.page-description {
+  color: $white;
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  display: flex;
+
+  @media (max-width: $mobile) {
+    padding-top: 250px;
+  }
+
+  .container {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.heading {
+  &-secondary {
+    margin-bottom: 2rem;
+
+    @media (max-width: $mobile) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &-manifest {
+    margin-bottom: 17px;
+  }
+}
+
+.form-sing {
+  display: flex;
+  max-width: 570px;
+  column-gap: 30px;
+  flex-wrap: wrap;
+
+  @media (max-width: $mobile) {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+
+  }
+
+  &-item {
+    color: $white;
+    font-size: 14px;
+    font-weight: 700;
+    box-sizing: border-box;
+    min-width: 270px;
+    min-height: 50px;
+    margin-bottom: 1.5rem;
+    padding-left: 20px;
+    border: 2px solid $primary;
+    border-radius: 3px;
+    background: transparent;
+
+    @media (max-width: $mobile) {
+      width: 100%;
+    }
+  }
+
+  &-btn {
+    font-size: 13.3px;
+    text-transform: uppercase;
+    width: 100%;
+    min-width: 270px;
+    min-height: 50px;
+    padding: 20px 30px;
+    background-color: $bg-green;
+  }
+
+  input::-webkit-input-placeholder {
+    color: $white;
+  }
+}

@@ -1,0 +1,63 @@
+* {
+  @include reset;
+}
+
+body {
+  font: 400 16px/1.5 Roboto, sans-serif;
+  color: $primary;
+  background-color: $bg-primary;
+}
+
+h1 {
+  font-size: 60px;
+  color: $white;
+
+  @include up-bold;
+
+  @media (max-width: $mobile) {
+    font-size: 30px;
+  }
+}
+
+h2 {
+  font-size: 38px;
+  color: $white;
+
+  @include up-bold;
+
+  @media (max-width: $mobile) {
+    font-size: 18px;
+  }
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 400;
+
+  @media (max-width: $mobile) {
+    font-size: 16px;
+  }
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.container {
+  max-width: 1200px;
+
+  @media (max-width: $mobile) {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.btn {
+  color: $white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

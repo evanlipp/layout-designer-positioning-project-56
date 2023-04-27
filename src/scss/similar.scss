@@ -1,0 +1,53 @@
+.page-similar {
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+.bands-heading {
+  margin-bottom: 48px;
+}
+
+.bands {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 50px;
+}
+
+.band {
+  margin-bottom: 25px;
+display: flex;
+flex-direction: column;
+align-items: center;
+
+
+  @media (max-width: $mobile) {
+    max-width: 138px;
+    text-align: center;
+  }
+
+  &-name {
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $white;
+    white-space: nowrap;
+  }
+
+  &-cover {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 18px;
+
+    @media (max-width: $mobile) {
+      width: 137px;
+      height: 137px;
+    }
+  }
+}

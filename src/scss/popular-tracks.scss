@@ -1,0 +1,54 @@
+.page-popular-track {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.page-popular-heading {
+  margin-bottom: 48px;
+}
+
+.tracks {
+  display: flex;
+  column-gap: 50px;
+  flex-wrap: wrap;
+}
+
+.track {
+  display: flex;
+  justify-content: space-between;
+  width: 550px;
+  margin-bottom: 25px;
+
+  @media (max-width: $mobile) {
+    width: 100%;
+  }
+
+  &-info {
+    display: flex;
+    align-items: center;
+  }
+
+  &-img {
+    width: 55px;
+    height: 55px;
+    margin-right: 15px;
+  }
+
+  &-name {
+    font-size: 12.8px;
+    font-weight: 700;
+    color: $white;
+    text-transform: uppercase;
+  }
+
+  &-author {
+    font-size: 12.8px;
+  }
+}
